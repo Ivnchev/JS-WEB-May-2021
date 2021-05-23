@@ -1,0 +1,10 @@
+{
+    "PORT":3000,
+    "URL": "http://localhost",
+    "database": {
+        "breedsURI": "/config/database/breeds.json",
+        "catsURI": "/config/database/cats.json",
+        "staticImagesURI": "static/images"
+    }
+    
+}
