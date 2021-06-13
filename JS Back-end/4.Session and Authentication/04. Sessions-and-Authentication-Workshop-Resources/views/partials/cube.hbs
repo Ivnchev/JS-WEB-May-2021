@@ -1,0 +1,12 @@
+<h1>{{name}}</h1>
+<img class="cube" src={{imageUrl}}>
+<div class="details">
+    <p><span>Description:</span>{{description}}</p>
+    <p><span>Difficulty level:</span> {{difficultyLevel}}</p>
+    <a class="btn" href="/">Back</a>
+    {{#if isOwner}}
+    <a class="btn" href="/accessory/{{_id}}/attach">attach</a>
+    <a class="btn" href="/cube/{{_id}}/edit">edit</a>
+    <a class="btn" href="/cube/{{_id}}/delete">delete</a>
+    {{/if}}
+</div>

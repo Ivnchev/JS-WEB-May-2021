@@ -1,0 +1,11 @@
+<main>
+    {{> cube cube}}
+    <h2>Accessories</h2>
+    <div class="accessories">
+        {{#each cube.accessories as | accessory |}}
+        {{> accessory accessory}}
+        {{else}}
+        <h3 class="italic">This cube has no accessories yet...</h3>
+        {{/each}}
+    </div>
+</main>
