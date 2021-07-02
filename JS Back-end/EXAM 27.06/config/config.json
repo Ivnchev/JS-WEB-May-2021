@@ -1,0 +1,24 @@
+{
+    "dev": {
+        "server": {
+            "port": 3000
+        },
+        "database": {
+            "db_uri": "mongodb://localhost:27017/",
+            "db_name": "trip",
+            "db_options": {
+                "useNewUrlParser": true,
+                "useUnifiedTopology": true,
+                "useCreateIndex": true,
+                "useFindAndModify": false,
+                "autoIndex" : false
+            }
+        },
+        "security": {
+            "secret": "my_secret",
+            "cookie_name": "auth_cookie",
+            "salt_rounds": 10
+        }
+    },
+    "prod": {}
+}
